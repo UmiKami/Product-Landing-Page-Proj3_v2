@@ -1,0 +1,65 @@
+/////////////////////////////////////////////////////////////////////////////
+// HEADER AND NAVBAR
+
+.nav-menu{
+    height: 5rem;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+#header{
+    background-color: #FF6F00;
+    height: 100%;
+    width: 87%;
+
+    position: fixed;
+    right: -380px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-bar{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-links{
+    text-decoration: none;
+    margin: 0rem 18rem 0rem 0rem;
+
+    color: white;
+    font-size: 3.5rem;
+
+    &:hover{
+        color: rgb(170, 9, 130);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// HOME SECTION
+
+.home{
+    background-image: url("/img/pexels-vlad-chețan-3842752.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// ABOUT SECTION
+/////////////////////////////////////////////////////////////////////////////
+// PRICING SECTION
+/////////////////////////////////////////////////////////////////////////////
+// TOUR SECTION
+/////////////////////////////////////////////////////////////////////////////
+// CONTACT SECTION
+
+
+
+
