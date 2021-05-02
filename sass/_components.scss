@@ -8,27 +8,45 @@
     top: 20px;
 }
 
-#header{
+.fa-window-close{
+    font-size: 4rem;
+    color: rgb(133, 0, 104);
+
+    position: absolute;
+    top: 1.8rem;
+    right: 1.8rem;
+}
+
+.header{
     background-color: #FF6F00;
     height: 100%;
     width: 87%;
-
+    
     position: fixed;
     right: -380px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    transition: all .4s;
+}
+
+.nav-show{
+    right: 0px;
 }
 
 .nav-bar{
     height: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+
+    &__list{
+        height: inherit;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
-.nav-links{
+.nav-link{
     text-decoration: none;
     margin: 0rem 18rem 0rem 0rem;
 
@@ -49,10 +67,84 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /////////////////////////////////////////////////////////////////////////////
 // ABOUT SECTION
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: black;
+    height: 100vh;
+
+    &__right-content{
+        height: 53%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__description{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: white;
+        text-align: justify;
+    }
+
+    &__collage{
+
+        height: auto;
+        width: 90%;
+
+        display: grid;
+        grid-template-areas: 
+        "img1 img1 img2 img2"
+        "img3 img3 img2 img2";
+
+        align-items: stretch;
+        grid-gap: 1rem;
+
+        &-img1{
+            max-width: 100%;
+            height: auto;
+            grid-area: img1;
+        }
+        &-img2{
+            max-width: 100%;
+            height: auto;
+            grid-area: img2;
+        }
+        &-img3{
+            max-width: 100%;
+            height: auto;
+            grid-area: img3;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h1{
+            font-size: 4.5rem;
+            color: #FF6F00;
+        }
+        h4{
+            font-weight: 600;
+            color: white;
+        }
+    }
+}
+
 /////////////////////////////////////////////////////////////////////////////
 // PRICING SECTION
 /////////////////////////////////////////////////////////////////////////////

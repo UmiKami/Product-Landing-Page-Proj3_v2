@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-menu {
+  height: 5rem;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.fa-window-close {
+  font-size: 4rem;
+  color: #850068;
+  position: absolute;
+  top: 1.8rem;
+  right: 1.8rem;
+}
+
+.header {
+  background-color: #FF6F00;
+  height: 100%;
+  width: 87%;
+  position: fixed;
+  right: -380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.nav-show {
+  right: 0px;
+}
+
+.nav-bar {
+  height: 100%;
+}
+
+.nav-bar__list {
+  height: inherit;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 0rem 18rem 0rem 0rem;
+  color: white;
+  font-size: 3.5rem;
+}
+
+.nav-link:hover {
+  color: #aa0982;
+}
+
+.home {
+  background-image: url("/img/pexels-vlad-chețan-3842752.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  height: 100vh;
+}
+
+.about__right-content {
+  height: 53%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about__description {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  text-align: justify;
+}
+
+.about__collage {
+  height: auto;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img1 img1 img2 img2" "img3 img3 img2 img2";
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  grid-gap: 1rem;
+}
+
+.about__collage-img1 {
+  max-width: 100%;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img1;
+}
+
+.about__collage-img2 {
+  max-width: 100%;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: img2;
+}
+
+.about__collage-img3 {
+  max-width: 100%;
+  height: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img3;
+}
+
+.about__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__title h1 {
+  font-size: 4.5rem;
+  color: #FF6F00;
+}
+
+.about__title h4 {
+  font-weight: 600;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
