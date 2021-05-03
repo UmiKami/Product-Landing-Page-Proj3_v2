@@ -37,7 +37,7 @@ body {
   height: 100%;
   width: 87%;
   position: fixed;
-  right: -380px;
+  right: -800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,8 +47,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .nav-show {
@@ -273,5 +273,28 @@ body {
 
 .product3-img {
   height: 28rem;
+}
+
+.tour {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.tour h1 {
+  color: white;
+  font-size: 4rem;
 }
 /*# sourceMappingURL=main.css.map */

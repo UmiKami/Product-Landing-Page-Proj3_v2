@@ -23,11 +23,11 @@
     width: 87%;
     
     position: fixed;
-    right: -380px;
+    right: -800px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    transition: all .4s;
+    transition: all .4s ease;
 }
 
 .nav-show{
@@ -206,6 +206,22 @@
 
 /////////////////////////////////////////////////////////////////////////////
 // TOUR SECTION
+
+.tour{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100vh;
+
+    h1{
+        color: white;
+        font-size: 4rem;
+    }
+}
+
 /////////////////////////////////////////////////////////////////////////////
 // CONTACT SECTION
 
