@@ -307,6 +307,19 @@
 /////////////////////////////////////////////////////////////////////////////
 // FOOTER
 
+.footer{
+    height: 25vh;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        color: white;
+    }
+}
 
 
 
