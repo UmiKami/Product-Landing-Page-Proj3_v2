@@ -147,6 +147,63 @@
 
 /////////////////////////////////////////////////////////////////////////////
 // PRICING SECTION
+
+.pricing{
+    height: fit-content;
+    
+
+    &__subsection{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        &-presentation{
+            font-size: 2.5rem;
+            color: white;
+            background-color: black;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            height: 50%;
+            padding: 1rem;
+        }
+
+        &-description{
+            padding: 1.5rem;
+            display: flex;
+            height: 50%;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h1{
+                font-size: 4rem;
+            }
+
+            p{
+                font-size: 2.5rem;
+            }
+
+            a{
+                color: black;
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+
+.product1-img{
+    height: 32rem;
+}
+.product2-img{
+    height: 32rem;
+}
+.product3-img{
+    height: 28rem;
+}
+
 /////////////////////////////////////////////////////////////////////////////
 // TOUR SECTION
 /////////////////////////////////////////////////////////////////////////////

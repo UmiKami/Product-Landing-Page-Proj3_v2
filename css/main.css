@@ -201,4 +201,77 @@ body {
   font-weight: 600;
   color: white;
 }
+
+.pricing {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.pricing__subsection {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pricing__subsection-presentation {
+  font-size: 2.5rem;
+  color: white;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  padding: 1rem;
+}
+
+.pricing__subsection-description {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pricing__subsection-description h1 {
+  font-size: 4rem;
+}
+
+.pricing__subsection-description p {
+  font-size: 2.5rem;
+}
+
+.pricing__subsection-description a {
+  color: black;
+  font-weight: 500;
+}
+
+.product1-img {
+  height: 32rem;
+}
+
+.product2-img {
+  height: 32rem;
+}
+
+.product3-img {
+  height: 28rem;
+}
 /*# sourceMappingURL=main.css.map */
