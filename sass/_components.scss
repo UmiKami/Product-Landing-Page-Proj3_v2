@@ -18,7 +18,7 @@
 }
 
 .header{
-    background-color: #FF6F00;
+    background-color: var(--orange-header);
     height: 100%;
     width: 87%;
     
@@ -136,7 +136,7 @@
         
         h1{
             font-size: 4.5rem;
-            color: #FF6F00;
+            color: var(--orange-header);
         }
         h4{
             font-weight: 600;
@@ -224,6 +224,88 @@
 
 /////////////////////////////////////////////////////////////////////////////
 // CONTACT SECTION
+
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-image: url("/img/contact-bg.png");
+    background-position: center;
+    background-size: cover;
+
+    h1{
+        font-size: 2.7rem;
+        color: var(--orange-header);
+        margin-top: 4rem;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 80%;
+        width: 100%;
+
+        &-funame, &-fEmail{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+        }
+
+        &-label{
+            padding: 3rem 0rem 1rem 0;
+            font-weight: bolder;
+        }
+
+        .lemail{
+            padding-top: 1.65rem;
+        }
+
+        &-INPT{
+            height: 3.5rem;
+            padding: .6rem;
+            width: 100%;
+
+            font-size: 1.8rem;
+            font-family: 'Montserrat', sans-serif;
+            border: 1.8px solid rgb(87, 140, 253);
+        }
+
+        &-message{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+
+        &-sBTN{
+            padding: 2rem 36.5%;
+            border-radius: 10px;
+            border: none;
+            background: linear-gradient(to top right, #521FAF, #FF0E8D);
+
+            font-size: 1.8rem;
+            font-weight: bolder;
+            color: white;
+        }
+    }
+}
+
+.mandatory-field{
+    color: rgb(255, 81, 0);
+}
+
+.message-area{
+    border: 1.8px solid rgb(87, 140, 253);
+    padding: .5rem;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// FOOTER
 
 
 

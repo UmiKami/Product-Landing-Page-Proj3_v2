@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+:root {
+  --orange-header: #FF6F00;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +37,7 @@ body {
 }
 
 .header {
-  background-color: #FF6F00;
+  background-color: var(--orange-header);
   height: 100%;
   width: 87%;
   position: fixed;
@@ -194,7 +198,7 @@ body {
 
 .about__title h1 {
   font-size: 4.5rem;
-  color: #FF6F00;
+  color: var(--orange-header);
 }
 
 .about__title h4 {
@@ -296,5 +300,112 @@ body {
 .tour h1 {
   color: white;
   font-size: 4rem;
+}
+
+.contact {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-image: url("/img/contact-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact h1 {
+  font-size: 2.7rem;
+  color: var(--orange-header);
+  margin-top: 4rem;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 80%;
+  width: 100%;
+}
+
+.contact__form-funame, .contact__form-fEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+.contact__form-label {
+  padding: 3rem 0rem 1rem 0;
+  font-weight: bolder;
+}
+
+.contact__form .lemail {
+  padding-top: 1.65rem;
+}
+
+.contact__form-INPT {
+  height: 3.5rem;
+  padding: .6rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+  border: 1.8px solid #578cfd;
+}
+
+.contact__form-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.contact__form-sBTN {
+  padding: 2rem 36.5%;
+  border-radius: 10px;
+  border: none;
+  background: -webkit-gradient(linear, left bottom, right top, from(#521FAF), to(#FF0E8D));
+  background: linear-gradient(to top right, #521FAF, #FF0E8D);
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.mandatory-field {
+  color: #ff5100;
+}
+
+.message-area {
+  border: 1.8px solid #578cfd;
+  padding: .5rem;
 }
 /*# sourceMappingURL=main.css.map */
