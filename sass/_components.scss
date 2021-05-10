@@ -151,11 +151,10 @@
 // PRICING SECTION
 
 .pricing{
-    height: fit-content;
+    min-height: fit-content;
     
 
     &__subsection{
-        min-height: 100vh;
         display: flex;
         flex-direction: column;
 
@@ -175,7 +174,7 @@
         &-description{
             padding: 1.5rem;
             display: flex;
-            height: 50%;
+            min-height: 50vh;
             flex-direction: column;
             justify-content: space-around;
 
@@ -216,11 +215,16 @@
     justify-content: space-evenly;
     align-items: center;
 
-    height: 100vh;
+    min-height: 100vh;
 
     h1{
         color: white;
         font-size: 4rem;
+    }
+
+    &__video{
+        width: 95%;
+        min-height: 70vh;
     }
 }
 
@@ -228,7 +232,7 @@
 // CONTACT SECTION
 
 .contact{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,6 +297,9 @@
             font-size: 1.8rem;
             font-weight: bolder;
             color: white;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
         }
     }
 }
